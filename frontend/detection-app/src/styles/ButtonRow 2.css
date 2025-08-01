@@ -1,0 +1,36 @@
+.lcds-icon-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .lcds-icon-button {
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(15px);
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(11, 29, 55, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-align: center;
+  }
+  
+  .lcds-icon-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(11, 29, 55, 0.5); 
+  }
+  
+  .lcds-icon-button span {
+    margin-top: 0.4rem;
+    font-size: 0.75rem;
+    color: #cceeff; 
+  }
+  

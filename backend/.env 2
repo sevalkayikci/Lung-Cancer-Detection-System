@@ -1,0 +1,9 @@
+DB_NAME=postgres # database name
+DB_USER=sevalkayikci #username
+DB_PASS=1203 #password
+DB_HOST=localhost #host
+DB_PORT=5432 #port
+DB_SCHEMA=lung_cancer_detection_system #schema name
+
+JWT_SECRET=19122003 #secret key for jwt
+PORT=8080 #port number for backend because i couldnt use the 5000 port so changed to 8080
