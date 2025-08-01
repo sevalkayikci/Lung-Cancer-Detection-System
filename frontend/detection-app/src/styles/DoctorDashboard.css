@@ -1,0 +1,129 @@
+.doctor-dashboard {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #0b1d37, #12345b, #1c3a5f, #0b1d37);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  margin-top: 20px;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.topbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem 1rem;
+  margin-top: 80px;
+}
+
+.welcome-row {
+  display: flex;
+  align-items: center;
+  gap: 12px; 
+}
+
+.welcome-row h1 {
+  font-size: 2rem;
+  color: #cceeff;
+  margin: 0;
+  font-weight: 600;
+}
+
+.dashboard-quote {
+  text-align: center;
+  margin-top: -0.5rem;
+  font-style: italic;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.dashboard-cards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  padding-bottom: 3rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 1rem;
+  padding: 2rem;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 20px rgba(11, 29, 55, 0.5);
+  transition: transform 0.2s ease;
+  box-sizing: border-box;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px rgba(11, 29, 55, 0.6);
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #cceeff;
+}
+
+.todo-card {
+  width: 500px;
+  min-height: 300px;
+  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.patient-card {
+  width: 280px;
+  min-height: 250px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(11, 29, 55, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: transform 0.2s ease;
+}
+
+@media (max-width: 768px) {
+  .dashboard-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90% !important;
+  }
+
+  .topbar {
+    padding: 1.5rem 1rem 1rem;
+  }
+
+  .welcome-row {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .welcome-row h1 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+}

@@ -1,0 +1,51 @@
+.medication-tab {
+  padding: 1.5rem;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.medication-tab h3 {
+  margin-top: -10px;
+}
+
+.medication-tab form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin-bottom: 2rem;
+}
+
+.medication-tab select,
+.medication-tab input,
+.medication-tab button {
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+}
+
+.medication-tab button {
+  background-color: #34a0a4;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.medication-tab button:hover {
+  background-color: #1b7c7e;
+}
+
+.medication-tab ul {
+  list-style: none;
+  padding-left: 0;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.medication-tab li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}

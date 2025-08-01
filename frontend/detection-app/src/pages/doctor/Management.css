@@ -1,0 +1,26 @@
+.management-container {
+  display: flex;
+  height: 100vh;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.patient-sidebar {
+  width: 250px;
+  background-color: #102840;
+  padding: 1.5rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.detail-section {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.placeholder-text {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #cccccc;
+  margin-top: 4rem;
+}

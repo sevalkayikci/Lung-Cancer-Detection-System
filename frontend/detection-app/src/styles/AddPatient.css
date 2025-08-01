@@ -1,0 +1,114 @@
+/*center*/
+.add-patient-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* card */
+.patient-form-container {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(20px);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  margin-top: -190px;
+
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: -10px !important;     
+  margin-bottom: 1rem !important;   
+}
+
+/* Grid */
+.patient-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* input */
+.patient-form input,
+.patient-form select,
+.patient-form textarea {
+  padding: 0.8rem;
+  border-radius: 0.6rem;
+  border: 1px solid #4fc3f7;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  font-size: 1rem;
+  backdrop-filter: blur(8px);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* select */
+.patient-form select {
+  appearance: none;
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1rem;
+  padding-right: 2.5rem;
+}
+
+.patient-form select:invalid {
+  color: #ccc;
+}
+
+.patient-form textarea {
+  grid-column: span 2;
+  resize: vertical;
+  min-height: 100px;
+}
+
+.patient-form button {
+  grid-column: span 2;
+  padding: 0.9rem;
+  background-color: #2196f3;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.patient-form button:hover {
+  background-color: #1976d2;
+}
+
+.success-message {
+  color: #4caf50;
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.error-message {
+  color: #f44336;
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+
+.patient-form input::placeholder,
+.patient-form textarea::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.patient-form input::-webkit-input-placeholder,
+.patient-form textarea::-webkit-input-placeholder {
+color: rgba(255, 255, 255, 0.7);
+}

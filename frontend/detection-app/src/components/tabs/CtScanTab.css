@@ -1,0 +1,99 @@
+.scan-tab {
+  padding: 1.5rem;
+}
+
+.no-scans {
+  color: #ccc;
+  font-style: italic;
+  text-align: center;
+  padding: 2rem;
+}
+
+.scan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.scan-item {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid #4fc3f7;
+  border-radius: 10px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-align: center;
+}
+
+.scan-item:hover {
+  background: rgba(79, 195, 247, 0.1);
+  transform: scale(1.02);
+}
+
+.scan-date {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #eafaff;
+}
+
+.scan-thumb {
+  max-width: 100%;
+  border-radius: 10px;
+  border: 2px solid #66ccff;
+}
+
+.scan-confidence {
+  margin-top: 0.5rem;
+  color: #aad;
+  font-size: 0.95rem;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  position: relative;
+  background: #112f4d;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  max-width: 600px;
+  width: 90%;
+  color: #eafaff;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+}
+
+.modal-image {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-top: 1rem;
+  border: 2px solid #66ccff;
+  box-shadow: 0 0 12px rgba(102, 204, 255, 0.3);
+}
+
+.close-x {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  background: transparent;
+  border: none;
+  color: #eafaff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-x:hover {
+  color: #66ccff;
+}

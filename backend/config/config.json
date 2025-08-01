@@ -1,0 +1,11 @@
+{
+    "development": {
+      "username": "sevalkayikci",
+      "password": "1203",
+      "database": "postgres",
+      "host": "localhost",
+      "dialect": "postgres",
+      "schema": "lung_cancer_detection_system"
+    }
+  }
+  

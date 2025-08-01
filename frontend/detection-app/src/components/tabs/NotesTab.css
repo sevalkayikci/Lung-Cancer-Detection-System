@@ -1,0 +1,83 @@
+.notes-tab {
+  padding: 1rem;
+  color: white;
+}
+
+.note-form textarea {
+  width: 98%;
+  min-height: 60px;
+  background: rgba(255, 255, 255, 0.04);
+  color: white;
+  border: 1px solid #66ccff;
+  border-radius: 8px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.note-form button {
+  background: #2f80ed;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.note-form button:hover {
+  background: #1c6dd0;
+}
+
+.note-list {
+  margin-top: 2rem;
+}
+
+.note-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #66ccff;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-top: 2.2rem;
+
+}
+
+.note-date {
+  font-size: 0.85rem;
+  color: #aaa;
+  margin-top: -20px;
+  display: block;
+}
+
+.note-actions {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  display: flex;
+  gap: 6px;
+}
+
+.note-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #66ccff;
+  padding: 2px;
+}
+
+.note-actions button:hover {
+  color: white;
+}
+
+.edit-textarea {
+  width: 100%;
+  min-height: 80px;
+  margin-top: 0.5rem;
+  background: rgba(255, 255, 255, 0.04);
+  color: white;
+  border: 1px solid #66ccff;
+  border-radius: 8px;
+  padding: 0.5rem;
+}

@@ -1,0 +1,132 @@
+
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  transform: scale(1.02);
+  padding: 120px 2rem 2rem 2rem;
+  margin-top: 0px !important;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.03); 
+  backdrop-filter: none;
+  max-width: 1000px;    
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: none !important;
+  transform: none !important;
+
+
+  border: 1px solid rgba(255, 255, 255, 0.08); 
+  backdrop-filter: blur(12px);
+}
+
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-right: 70px;
+  color: white;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  margin-top: -20px;
+  color: white;
+}
+
+.input,
+select.input {
+  height: 48px;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.1);
+  color: black;
+  border: 1px solid #56ccf2;
+  backdrop-filter: blur(5px);
+  width: 100%;
+  appearance: none;
+}
+
+.input::placeholder {
+  color: black;
+}
+
+.input-error {
+  border-color: #ef4444;
+}
+
+.text-red {
+  color: #ef4444;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}
+
+.input-grid, .form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.cancel-button,
+.save-button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cancel-button {
+  background: transparent;
+  border: 2px solid #56ccf2;
+  color: white;
+}
+
+.cancel-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.save-button {
+  background: #2f80ed;
+  border: none;
+  color: white;
+  box-shadow: 0 0 15px rgba(47, 128, 237, 0.6);
+}
+
+.save-button:hover {
+  background: #1c6dd0;
+  transform: scale(1.02);
+}
+
+.success-message {
+  background: rgba(0, 255, 150, 0.15);
+  border: 1px solid #10b981;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  color: #a7f3d0;
+}
